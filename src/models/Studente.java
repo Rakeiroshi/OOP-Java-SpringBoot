@@ -26,7 +26,6 @@ public class Studente {
             somma += i;
             num_voti++;
         }
-        double media = (double) somma / num_voti;
-        return media;
+        return (double) somma / num_voti;
         }
 }
