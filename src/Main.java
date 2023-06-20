@@ -1,4 +1,5 @@
 import models.Counter;
+
 public class Main {
     public static void main(String[] args) {
         Counter counter1 = new Counter(5);
@@ -9,19 +10,19 @@ public class Main {
         System.out.println("Inizio conteggio 2: " + Counter.getCount());
 
         System.out.println("***************************************************");
-        counter1.incrementCount();
+        Counter.incrementCount(counter1);
         System.out.println("Primo conteggio dopo l'incremento: " + Counter.getCount());
 
-        counter2.incrementCount();
+        Counter.incrementCount(counter2);
         System.out.println("Secondo conteggio dopo l'incremento: " + Counter.getCount());
 
         System.out.println("***************************************************");
         counter1.setNumber(3);
-        counter1.incrementCount();
+        Counter.incrementCount(counter1);
         System.out.println("Primo conteggio dopo aver settato il numero di incremento " + Counter.getCount());
 
         counter2.setNumber(10);
-        counter2.incrementCount();
+        Counter.incrementCount(counter2);
         System.out.println("Secondo conteggio dopo aver settato il numero di incremento " + Counter.getCount());
 
         System.out.println("***************************************************");

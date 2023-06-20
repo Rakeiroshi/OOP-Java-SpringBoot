@@ -8,8 +8,8 @@ public class Counter {
         this.number = number;
     }
 
-    public void incrementCount() {
-        count += number;
+    public static void incrementCount(Counter counter) {
+        count += counter.getNumber();
     }
 
     public static int getCount() {
