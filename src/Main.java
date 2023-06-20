@@ -53,5 +53,10 @@ public class Main {
         giancarlo.ammesso();
         max.ammesso();
 
+
+        Studente[] studenti = {michael, ayrton, jarno, giancarlo, max};
+        Studente migliorStudente = Studente.trovaMigliorStudente(studenti);
+        System.out.println("Lo studente migliore è: " + migliorStudente.getNome() + " " + migliorStudente.getCognome());
+
     }
 }

@@ -20,7 +20,9 @@ public class Studente {
     public String getNome() {
         return this.nome;
     }
-
+    public String getCognome() {
+        return this.cognome;
+    }
     @Override
     public String toString() {
         return "Studente{" +
@@ -40,5 +42,19 @@ public class Studente {
         } else {
             System.out.println("Studente non ammesso alla prova finale");
         }
+    }
+
+    public static Studente trovaMigliorStudente(Studente[] studenti) {
+        Studente migliorStudente = null;
+        int mediaMassima = 0;
+
+        for (Studente studente : studenti) {
+            if (studente.media > mediaMassima) {
+                mediaMassima = studente.media;
+                migliorStudente = studente;
+            }
+        }
+
+        return migliorStudente;
     }
 }
