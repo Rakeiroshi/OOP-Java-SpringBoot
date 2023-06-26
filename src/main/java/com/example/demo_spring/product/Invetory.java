@@ -6,5 +6,5 @@ import java.util.List;
 public class Invetory {
     private Long id;
     private String name;
-    private List<Long> prodotti = new ArrayList<>();
+    private List<Long> Product = new ArrayList<>();
 }
